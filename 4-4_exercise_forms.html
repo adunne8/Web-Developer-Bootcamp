@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms Exercise</title>
+</head>
+<body>
+    <h1>Register</h1>
+    
+    <form>
+        <div>
+            <label for="first_name">First Name:</label>
+            <input id="first_name" name="first_name" type="text" placeholder="John" required>
+            <label for="last_name">Last Name:</label>
+            <input id="last_name" name="last_name" type="text" placeholder="Smith" required>
+        </div>
+
+        <div>
+            <label for="gender_male">Male</label>
+            <input id="gender_male" type="radio" value="male" name="gender" required>
+            <label for="gender_female">Female</label>
+            <input id="gender_female" type="radio" value="female" name="gender" required>
+            <label for="gender_other">Other</label>
+            <input id="gender_other" type="radio" value="other" name="gender" required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="text" placeholder="email" required>
+            <label for="password" placeholder="password">Password:</label>
+            <input id="password" name="password" type="password" pattern=".{5,10}" title="5 - 10 characters only" required>
+
+        </div>
+            <label for="month">Birthday</label>
+            <select id="month" name="month" selected="Month" required>
+                <option selected disabled>Month</option>
+                <option value="jan">Jan</option>
+                <option value="feb">Feb</option>
+            </select>
+
+            <select id="month" name="day" selected="Day" required>
+                <option selected disabled>Day</option>
+                <option value="mon">Mon</option>
+                <option value="tues">Tues</option>
+            </select>
+            <select id="year" name="year" selected="Year" required>
+                <option selected disabled>Year</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+            </select>
+            
+            <div>
+                <button>Submit</button>
+            </div>
+        <div>
+
+        </div>
+    </form>
+
+</body>
+</html>

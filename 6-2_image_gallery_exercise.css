@@ -1,0 +1,19 @@
+img{
+    width: 30%;
+    float: left;
+    margin: 1.66%;
+}
+#imagegallery{
+    margin: auto;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+h1{
+    margin-left: 1.66%;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #aaa;
+    width: 30%;
+}
