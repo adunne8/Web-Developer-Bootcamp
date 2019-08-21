@@ -7,12 +7,41 @@ window.setTimeout(function() {
 
 
         if(input === "list"){
-            console.log(todos)
+            listDodos();
         }
         else if(input === "new"){
-            todos.push(prompt("Waht would you like to add?"));
+            addTodo();
+            listDodos();
+        }
+        else if(input === "delete"){
+            deleteTodo();
+            listDodos();
+
         }
 
+    }
+
+    function listDodos(){
+        console.clear();
+        console.log("************");
+        todos.forEach(function(listItem, i){
+            console.log(i + ": " + listItem);
+        });
+        console.log("************");
+    }
+    function addTodo(){
+        todos.push(prompt("Waht would you like to add?"));
+    }
+    function deleteTodo(){
+        var index = prompt("Which index would you like to delete?");
+
+        if(index >= 0 && index < todos.length){
+            todos.splice(index, 1)
+            console.log("Todo removed")
+        }
+        else{
+            console.log("Invalid selection");
+        }
     }
 
 }, 500);
