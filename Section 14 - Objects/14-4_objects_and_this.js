@@ -7,6 +7,4 @@ comments.print = function(){
         console.log(item);
     })
     console.log(this);
-
-
 }
