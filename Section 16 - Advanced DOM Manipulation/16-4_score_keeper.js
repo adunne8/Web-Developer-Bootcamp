@@ -5,6 +5,8 @@ var p2Button = document.getElementById("p2");
 var resetButton = document.getElementById("reset");
 let p1Display = document.getElementById("p1score");
 let p2Display = document.getElementById("p2score");
+let maxInput = document.getElementById("maxscore"); 
+let maxScoreDisplay = document.querySelector("p span");
 
 let gameOver = false;
 let winningScore = 5;
@@ -29,8 +31,9 @@ function clickAction1(){
         p1Score++;
         p1Display.textContent = p1Score;
     }
-    if(p1Score === winningScore){
+    if(p1Score >= winningScore){
         gameOver = true;
+        p1Display.classList.add('winner');
     }
 }
 
@@ -39,8 +42,9 @@ function clickAction2(){
         p2Score++;
         p2Display.textContent = p2Score;
     }
-    if(p2Score === winningScore){
+    if(p2Score >= winningScore){
         gameOver = true;
+        p2Display.classList.add('winner');
     }
 }
 
@@ -51,9 +55,16 @@ function clickClear(){
 
     p1Display.textContent = p1Score;
     p2Display.textContent = p2Score;
+
+    p1Display.classList.remove('winner');
+    p2Display.classList.remove('winner');
 }
 
-
+function updateMax(){
+    winningScore = this.value;
+    console.log(this.value);
+    maxScoreDisplay.textContent = winningScore;
+}
 
 /*
 p1Button.addEventListener("click", function(){
@@ -67,5 +78,6 @@ p2Button.addEventListener("click", clickAction2);
 //p1Button.addEventListener("click", clickAction);
 //p2Button.addEventListener("click", clickAction);
 resetButton.addEventListener("click", clickClear);
+maxInput.addEventListener("change", updateMax);
 
 
