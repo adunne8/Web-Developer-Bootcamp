@@ -1,0 +1,9 @@
+.li-highlight{
+    font-weight: 700;
+    color: #c60000;
+}
+
+.li-done{
+    text-decoration: line-through;
+    color: grey;
+}
