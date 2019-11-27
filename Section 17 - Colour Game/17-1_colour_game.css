@@ -1,11 +1,48 @@
 body{
     background-color: #232323;
+    margin: 0;
+}
+h1{
+    color: #ffffff;
+    background-color: steelblue;
+
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+
+    font-family: "Avenir", "Arial";
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+h1 span{
+    display: block;
 }
 
 #container{
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
+
+#stripe{
+    text-align: center;;
+    background-color: #ffffff;
+    height: 30px;
+}
+#message{
+    color: black;
+}
+
+#colourdisplay{
+    font-size: 200%;
+}
+#message{
+    display: inline-block;
+    width: 20%;
+}
+
+
 
 .square{
     width: 30%;
@@ -13,7 +50,31 @@ body{
     padding-bottom: 30%;
     float: left;
     margin: 1.66%;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+    transition: background-color .3s;
 }
-span{
+
+.selected{
+    background-color: steelblue;
     color: white;
+}
+
+button{
+    border: none;
+    background: none;
+    height: 100%;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: steelblue;
+
+    transition: all .3s;
+}
+
+button:hover{
+    color: white;
+    background-color: steelblue;
 }
