@@ -70,6 +70,7 @@ button{
     letter-spacing: 1px;
     font-weight: 700;
     color: steelblue;
+    outline: none;
 
     transition: all .3s;
 }
