@@ -1,0 +1,10 @@
+// PROJECT ROOT FILE FOR JavaScript INTELLISENSE CONFIGURATION
+// ADD jQuery INTELLISENSE
+{
+    "typeAcquisition": {
+        "include": [
+            "jquery"
+        ]
+    }
+
+}
