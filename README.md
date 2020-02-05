@@ -24,25 +24,25 @@ Course Link: [The Web Developer Bootcamp](https://www.udemy.com/course/the-web-d
 - [x] Section 17  
 - [x] Section 18  
 - [x] Section 19  
-- [] Section 20  
-- [] Section 21  
-- [] Section 22  
-- [] Section 23  
-- [] Section 24  
-- [] Section 25  
-- [] Section 26  
-- [] Section 27  
-- [] Section 28  
-- [] Section 29  
-- [] Section 30  
-- [] Section 31  
-- [] Section 32  
-- [] Section 33  
-- [] Section 34  
-- [] Section 35  
-- [] Section 36  
-- [] Section 37  
-- [] Section 38  
-- [] Section 39  
-- [] Section 40  
-- [] Section 41  
+- [ ] Section 20  
+- [ ] Section 21  
+- [ ] Section 22  
+- [ ] Section 23  
+- [ ] Section 24  
+- [ ] Section 25  
+- [ ] Section 26  
+- [ ] Section 27  
+- [ ] Section 28  
+- [ ] Section 29  
+- [ ] Section 30  
+- [ ] Section 31  
+- [ ] Section 32  
+- [ ] Section 33  
+- [ ] Section 34  
+- [ ] Section 35  
+- [ ] Section 36  
+- [ ] Section 37  
+- [ ] Section 38  
+- [ ] Section 39  
+- [ ] Section 40  
+- [ ] Section 41  
