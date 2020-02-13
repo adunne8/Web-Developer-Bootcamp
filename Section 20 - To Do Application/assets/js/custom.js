@@ -27,17 +27,38 @@ function markOff(item){
 
 function deleteItem(item, event){
     console.log($(item).parent().text());
-    $(item).parent().fadeOut(700, function(){
+    $(item).parent().fadeOut(300, function(){
         $(this).remove();
     });
+    // STOPS EVENTS ON OTHER ITEMS 
     event.stopPropagation();
 };
 
-$("li span").on("click", function(e){
-    deleteItem(this, e);
-    
-});
+function logText(item, event){
 
-$("li").on("click", function(){
-    markOff(this);
-});
+    console.log(event.which);
+    console.log($(item).val());
+    if(event.which === 13){
+        $("#todolist").append("<li><span>X</span> " + $(item).val() + "</li>");
+        $(item).val("");
+
+    }
+}
+
+function setEvents(){
+    $("ul").on("click", "li span", function(e){
+        deleteItem(this, e);
+        
+    });
+
+    $("ul").on("click", "li", function(){
+        markOff(this);
+    });
+
+    $("input[type='text']").on("keypress", function(event){
+        logText(this, event);
+    });
+
+}
+
+setEvents();
